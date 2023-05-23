@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>first</title>
+        <style type="text/css">
+            body {
+                 background-color: darkmagenta;
+                background-image : url("https://images.pexels.com/photos/1231622/pexels-photo-1231622.jpeg?cs=srgb&dl=blue-water-blur-close-up-1231622.jpg&fm=jpg");
+                 display: flex;
+                 border-radius: 20px 20px;
+                 display: flex;
+                background-size: cover;
+                 background-repeat: no-repeat;
+
+            }
+            div{
+                background-color: beige;
+                box-shadow: 10px 12px 20px red;
+                height:30vh;
+                width: 50vh;
+                display: block;
+                padding: 50px 50px;
+                margin-left: 500px;
+                margin-top :150px;
+                border-radius: 30px;
+
+            }
+            button {
+                background-color: blue;
+                border-radius: 30px;
+                padding-left: 130px;
+                padding-right: 130px;
+                font-size: 30px;
+                align-items: center;
+    
+    
+            }
+
+            textArea {
+                text-overflow: ellipsis;
+                font-size: 30px;
+                font-style: italic;
+                font-weight: 300;
+                box-shadow: none;
+                display: flex;
+                border: 5px solid rgb(0, 170, 255) ;
+            }   
+        </style>
+    </head>
+    <body >
+        <div>
+            <textarea></textarea>
+            <button>Speak</button>
+        </div>
+        <script>
+            button = document.querySelector("button");
+            text = document.querySelector("textarea");
+            button.addEventListener("click",() => {
+                let utterance = new SpeechSynthesisUtterance(text.value);
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+       
+    </body>
+</html>
