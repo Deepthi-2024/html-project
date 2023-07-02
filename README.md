@@ -1,7 +1,8 @@
-HTML - TEXT TO SPEAK
+voice text
+ a simple project of text to speak by using HTML and CSS.
 
 
 link:
 
-file:///C:/Users/Deepthi/AppData/Local/Microsoft/Windows/INetCache/IE/SRNCQDGZ/voice_text[1].html
+https://dstq5s1flwxtp.cloudfront.net/voice%20text.html
 
